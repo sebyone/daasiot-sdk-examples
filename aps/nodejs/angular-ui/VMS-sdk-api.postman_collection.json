@@ -1,0 +1,175 @@
+{
+	"info": {
+		"_postman_id": "076adf6c-c1be-4de6-ac40-f0f9def6de30",
+		"name": "VMS-sdk-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "VMS",
+			"item": [
+				{
+					"name": "GetVmsList",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/api/vms/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"vms",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetVmsDevices",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/api/vms/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"vms",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetVmsDeviceMeasurement",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/api/vms/1/devices/1/measurements",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"vms",
+								"1",
+								"devices",
+								"1",
+								"measurements"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateVms",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"vms1\",\r\n    \"iot\" : false,\r\n    \"vmsUri\" : \"ws://127.0.0.1\",\r\n    \"vmsPort\" : \"5002\",\r\n    \"note\" : \"test vms\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/vms/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"vms",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetVms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3002/api/exchange/vms-list",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"exchange",
+								"vms-list"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateVmsDevice",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3002/api/vms/1/devices",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3002",
+							"path": [
+								"api",
+								"vms",
+								"1",
+								"devices"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "DIN",
+			"item": [
+				{
+					"name": "BindDevice",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
